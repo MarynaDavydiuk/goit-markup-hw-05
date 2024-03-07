@@ -720,34 +720,66 @@
         <form action="" class="modal-form">
           <label class="modal-label">
             Name
-            <input class="modal-iput" type="text" name="user-name"  required >
+            <div class="modal-label-container">
+              <input class="modal-input" type="text" name="user-name" required >
+              <svg
+              class="icon name"
+              width="18px"
+              height="24px"
+              aria-label="icon name">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+            </div>
           </label>
           <label class="modal-label">
             Phone
-            <input class="modal-iput" type="tel" name="user-tell" required>
+            <div class="modal-label-container">
+              <input class="modal-input" type="tel" name="user-tell" required>
+              <svg
+              class="icon phone"
+              width="18px"
+              height="24px"
+              aria-label="icon phone">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+            </div>
           </label>
           <label class="modal-label">
             Email
-            <input class="modal-iput" type="email" name="user-mail" required>
+            <div class="modal-label-container">
+              <input class="modal-input" type="email" name="user-mail" required>
+              <svg
+              class="icon mail"
+              width="18px"
+              height="24px"
+              aria-label="icon mail">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+            </div>
           </label>
           <label class="modal-label">
             Comment
-            <textarea class="modal-comment" type="text" name="user-comment" placeholder="Text input" required>
+            <textarea class="modal-comment" type="text" name="user-comment" placeholder="Text input"></textarea>
           </label>
+          </form>
+
+          <!--Privacy Policy-->
           <div class="modal-privpol">
           <input class="vh-checkboks" type="checkbox" id="check">
-          <label class="modal-chek-label" for="">
-            <span>
-              <svg>
-                <use></use>
+          <label class="modal-chek-label" for="check">
+              <svg
+              class="icon privpol"
+              width="10px"
+              height="8px"
+              aria-label="icon accept"> 
+                <use href="./images/icons.svg#icon-privpol"></use>
               </svg>
-              </span>
-              <p class="modal-check-text"><a class="modal-check-privpol" href=""></a></p>
+              <p class="modal-check-text">I accept the terms and conditions of the 
+                <a class="modal-check-privpol" href="">Privacy Policy</a>
+              </p>
                </label>
            </div> 
-         
-          
-          </form>
+        <button class="btn btn-modal" type="button">Send</button>
       </div>
     </div>
 

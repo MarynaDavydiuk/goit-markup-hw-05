@@ -565,19 +565,140 @@ input {
   background-color: #e7e9fc;
   width: 24px;
   height: 24px;
-  stroke: #2e2f42;
+  transition: border-color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-button .icon-close {
+  fill: #2e2f42;
   stroke-width: 1px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  background-color: #404bbf;
+  border-color: transparent;
+}
+
+.modal-close-button:hover .icon-close,
+.modal-close-button:focus .icon-close {
+  fill: #fff;
 }
 
 .modal-title {
   text-align: center;
   font-weight: 500;
   color: #2e2f42;
-  margin: auto;
+  margin-bottom: 16px;
 }
 
-/*.modal-form {
-}*/
+.modal-form {
+  margin-bottom: 16px;
+}
+
+.modal-label {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 8px;
+}
+
+.modal-label-container {
+  position: relative;
+}
+
+.modal-label-container .icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 16px;
+}
+
+.modal-input {
+  outline: transparent;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  padding: 8px 16px 8px 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2e2f42;
+}
+
+.modal-input::placeholder {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-input:focus {
+  border: 1px solid #4d5ae5;
+}
+
+.modal-input:focus ~ .icon {
+  fill: #4d5ae5;
+}
+
+.modal-comment {
+  outline: transparent;
+  width: 100%;
+  height: 120px;
+  color: #2e2f42;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 8px 16px;
+  resize: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-comment:focus {
+  border-color: #4d5ae5;
+}
+
+/*============PP=================*/
+
+.vh-checkboks:checked .modal-chek-label {
+  border: none;
+  background-color: #404bbf;
+  fill: #f4f4fd;
+}
+
+.modal-check-text {
+  color: #8e8f99;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+}
+
+.modal-check-privpol {
+  color: #4d5ae5;
+}
+/*================================*/
+
+.btn-modal {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 169px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+  background-color: #404bbf;
+}
 
 /*===============visually-hidden=============*/
 
