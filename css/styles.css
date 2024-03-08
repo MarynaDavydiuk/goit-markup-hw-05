@@ -614,9 +614,13 @@ input {
 .style-modal-label {
   margin-bottom: 8px;
 }
-.style-modal-label:last-child {
+
+.style-modal-label .comment {
   margin-bottom: 16px;
 }
+/*.style-modal-label:last-child {
+  margin-bottom: 16px;
+}*/
 
 .modal-label {
   display: block;
