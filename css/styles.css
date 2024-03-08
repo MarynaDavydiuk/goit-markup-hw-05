@@ -615,12 +615,12 @@ input {
   margin-bottom: 8px;
 }
 
-.style-modal-label .comment {
+.style-modal-label.comment {
   margin-bottom: 16px;
 }
-/*.style-modal-label:last-child {
+.style-modal-label:last-child {
   margin-bottom: 16px;
-}*/
+}
 
 .modal-label {
   display: block;
@@ -712,7 +712,7 @@ input {
   color: #8e8f99;
 }
 
-.checkbox-visible {
+.modal-chek-label .checkbox-visible {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -733,6 +733,8 @@ input {
 .vh-checkbox:checked ~ .modal-chek-label .checkbox-visible {
   border-color: transparent;
   background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .vh-checkbox:checked ~ .modal-chek-label .checkbox-visible .icon-privpol {
