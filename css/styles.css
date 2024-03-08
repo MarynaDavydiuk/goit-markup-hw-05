@@ -723,10 +723,6 @@ input {
   display: inline-flex;
 }
 
-.modal-chek-label .checkbox-visible {
-  display: inline-flex;
-}
-
 .checkbox-visible .icon-privpol {
   fill: transparent;
 }
