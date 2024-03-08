@@ -700,8 +700,6 @@ input {
 }
 
 .modal-chek-label {
-  display: flex;
-  gap: 8px;
   align-items: center;
   font-size: 12px;
   line-height: 1.17;
