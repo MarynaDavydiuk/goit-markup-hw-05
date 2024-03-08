@@ -723,7 +723,7 @@
                 class="modal-input"
                 type="text"
                 name="user-name"
-                id="user-name" 
+                id="user-name"
                 required
               />
               <svg
@@ -739,7 +739,13 @@
           <div class="style-modal-label">
             <label for="user-tell" class="modal-label"> Phone</label>
             <div class="modal-label-container">
-              <input class="modal-input" type="tel" name="user-tell" required />
+              <input
+                class="modal-input"
+                type="tel"
+                name="user-tell"
+                id="user-tell"
+                required
+              />
               <svg
                 class="icon phone"
                 width="18"
@@ -757,6 +763,7 @@
                 class="modal-input"
                 type="email"
                 name="user-mail"
+                id="user-mail"
                 required
               />
               <svg
@@ -770,47 +777,43 @@
             </div>
           </div>
           <div class="style-modal-label">
-            <label for="user-comment" class="modal-label">
-              Comment</label>
-              <textarea
-                class="modal-comment"
-                name="user-comment"
-                placeholder="Text input"
-                id="user-comment"
-              ></textarea>
-            </label>
+            <label for="user-comment" class="modal-label"> Comment</label>
+            <textarea
+              class="modal-comment"
+              name="user-comment"
+              placeholder="Text input"
+              id="user-comment"
+            ></textarea>
           </div>
-        
 
-        <!--Privacy Policy-->
-        <div class="modal-privpol">
-          <input
-            class="vh-checkbox visually-hidden"
-            type="checkbox"
-            id="user-privacy"
-            name="user-privacy"
-            value="true"
-          />
-          <label class="modal-chek-label"  for="user-privacy">
-            <span class="checkbox-visible">
-              <svg
-                class="icon-privpol"
-                width="10"
-                height="8"
-                aria-label="icon accept"
-              >
-                <use href="./images/icons.svg#icon-privpol"></use>
-              </svg>
-            </span>
+          <!--Privacy Policy-->
+          <div class="modal-privpol">
+            <input
+              class="vh-checkbox visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+            />
+            <label class="modal-chek-label" for="user-privacy">
+              <span class="checkbox-visible">
+                <svg
+                  class="icon-privpol"
+                  width="10"
+                  height="8"
+                  aria-label="icon accept"
+                >
+                  <use href="./images/icons.svg#icon-privpol"></use>
+                </svg>
+              </span>
+            </label>
             <p class="modal-check-text">
               I accept the terms and conditions of the
               <a class="modal-check-privpol" href="#">Privacy Policy</a>
             </p>
-          </label>
-        </div>
+          </div>
+          <button class="btn btn-modal" type="button">Send</button>
         </form>
-
-        <button class="btn btn-modal" type="button">Send</button>
       </div>
     </div>
   </body>
