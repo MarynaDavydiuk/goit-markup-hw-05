@@ -484,18 +484,23 @@ input {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 0 16px;
   background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 .input-form-label::placeholder {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 }
 
 .btn-subscribe {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -506,7 +511,7 @@ input {
   background-color: #4d5ae5;
   border-radius: 4px;
   padding: 8px 24px;
-  min-width: 169px;
+  min-width: 165px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -518,6 +523,7 @@ input {
 
 .icon-send {
   fill: #fff;
+  margin-left: 16px;
 }
 
 /*===============Backdrop styles=========================*/
@@ -533,6 +539,8 @@ input {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -553,9 +561,14 @@ input {
   background: #fcfcfc;
   border-radius: 4px;
   padding: 72px 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -565,7 +578,7 @@ input {
   background-color: #e7e9fc;
   width: 24px;
   height: 24px;
-  transition: border-color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button .icon-close {
@@ -578,6 +591,7 @@ input {
 .modal-close-button:focus {
   background-color: #404bbf;
   border-color: transparent;
+  border: none;
 }
 
 .modal-close-button:hover .icon-close,
@@ -604,13 +618,15 @@ input {
 }
 
 .modal-label {
+  display: block;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
+  /*display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 4px;*/
+  margin-bottom: 4px;
 }
 
 .modal-label-container {
