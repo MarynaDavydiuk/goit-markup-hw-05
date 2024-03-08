@@ -628,9 +628,6 @@ input {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
   margin-bottom: 4px;
 }
 
@@ -712,7 +709,7 @@ input {
   color: #8e8f99;
 }
 
-.modal-chek-label .checkbox-visible {
+.checkbox-visible {
   display: inline-flex;
   justify-content: center;
   align-items: center;
